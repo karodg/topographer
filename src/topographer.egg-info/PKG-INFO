@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: topographer
+Version: 1.0.0
+Summary: Autonomous Neural Road Network & Topology Graph Extraction from Aerial/Satellite Imagery
+Author: TopoGrapher AI Team
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: networkx>=3.0
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: pillow>=9.5.0
+Requires-Dist: tifffile>=2023.1.1

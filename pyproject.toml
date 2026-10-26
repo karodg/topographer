@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topographer"
+version = "1.0.0"
+description = "Autonomous Neural Road Network & Topology Graph Extraction from Aerial/Satellite Imagery"
+readme = "README.md"
+authors = [{ name = "TopoGrapher AI Team" }]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "networkx>=3.0",
+    "shapely>=2.0.0",
+    "matplotlib>=3.7.0",
+    "pillow>=9.5.0",
+    "tifffile>=2023.1.1"
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+topographer = "topographer.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
